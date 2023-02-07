@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Users Info</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="myContainer">
+            <!-- About programmer -->
+            <p>This project was done by Sherzod Ibn Sharifjon</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary add-user-btn">Add User</button>
+            
+            <table class="table d-none table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Surname</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tbody"></tbody>
+            </table>
+            <!-- Modal -->
+            <div class="myModal d-none">
+                <div class="myModal-centered">
+                    <div class="myModal-content">
+                        <div class="myModal-title">
+                            <h5 class="my-modal-title">Enter the user info</h5>
+                        </div>
+                        <div class="myModal-body">
+                            <div class="modal-info">
+                                <div class="row-input">
+                                    <div class="label-div">
+                                        <label for="name" class="label-text">Name</label>
+                                    </div>
+                                    <div class="input-div">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="row-input">
+                                    <div class="label-div">
+                                        <label for="surname" class="label-text">Surname</label>
+                                    </div>
+                                    <div class="input-div">
+                                        <input type="text" class="form-control" id="surname" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="row-input">
+                                    <div class="label-div">
+                                        <label for="contact" class="label-text">Contact Number</label>
+                                    </div>
+                                    <div class="input-div">
+                                        <input type="tel" class="form-control" id="contact" placeholder="Enter...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myModal-footer">
+                            <button type="button" class="btn btn-secondary" id="close-modal">Close</button>
+                            <button type="button" class="btn btn-primary"  id="draw">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

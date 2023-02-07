@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+.myContainer{
+    font-family:'DynaPuff', cursive;
+    word-spacing: 9px;
+    text-align: center;
+    padding: 0 10%;
+}
+p{
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+}
+.my-modal-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.add-user-btn{
+    width: 60%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10vh;
+
+}
+.d-none{
+    display: none;
+}
+.row-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    word-spacing: 2px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.row-input .input-div{
+    width: 60%;
+}
+.myModal{
+    color: rgb(0, 0, 0);
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #0139f1;
+    border: 1px solid #0139f1;
+    border-radius: 10px;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-items{
+    font-size: 28px;
+}
+.myModal-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+@media (min-width: 786px) and (max-width: 1200px){
+    .myModal{
+        width: 550px;
+    }
+}
+@media (min-width: 576px) and (max-width: 786px){
+    .myModal{
+        width: 450px;
+        padding: 2rem;
+    }
+    .row-input{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        word-spacing: 1px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .row-input .input-div{
+        width: 50%;
+    }
+}
+@media (max-width: 576px){
+    .myModal{
+        width: 300px;
+        padding: 1.5rem;
+    }
+    .label-div{
+        text-align: left;
+    }
+    .row-input .input-div{
+        width: 45%;
+    }
+    .row-input{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 7px;
+        margin-top: 0.1rem;
+    }
+    input::placeholder{
+        font-size: 10px;
+    };
+}
+@media (max-width: 350px){
+    .myModal{
+        width: 270px;
+        padding: 1rem;
+    }
+    .my-modal-title{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .label-div{
+        text-align: left;
+    }
+    .row-input{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-top: 1px;
+    }
+    input::placeholder{
+        font-size: 8px;
+    };
+}
